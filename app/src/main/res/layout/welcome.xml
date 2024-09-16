@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:text="환영합니다!"
         android:textColor="@android:color/black"
-        android:textSize="72dp"
+        android:textSize="72sp"
         android:textAlignment="center"
         android:textStyle="italic" />
 </LinearLayout>
