@@ -2,135 +2,70 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".MainActivity"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    style="@style/mm"
     android:orientation="vertical">
 
     <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        style="@style/mw">
 
         <EditText
             android:id="@+id/id_text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
             android:layout_marginTop="160dp"
-            android:layout_marginEnd="16dp"
             android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
             android:hint="id"
             android:inputType="text"
             android:maxLength="20"
-            android:paddingStart="16dp"
-            android:textColorHint="#A9ADB4"
-            android:textCursorDrawable="@null"
-            android:textSize="24sp" />
+          style="@style/sign_up_text" />
 
         <Button
             android:id="@+id/id_check"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:layout_marginEnd="16dp"
-            android:text="중복확인"
-            android:layout_gravity="bottom|end"/>
+            style="@style/check_button"
+            android:text="중복확인"/>
     </FrameLayout>
 
     <EditText
         android:id="@+id/pw_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
         android:hint="pw"
+        style="@style/sign_up_text"
         android:inputType="textPassword"
-        android:textSize="24sp"
-        android:paddingStart="16dp"
-        android:textColorHint="#A9ADB4"
-        android:textCursorDrawable="@null"/>
+        />
 <FrameLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    style="@style/mw"
     android:orientation="horizontal">
     <EditText
         android:id="@+id/pw_check_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginTop="16dp"
         android:hint="다시 한번 입력해 주세요."
-        android:textSize="24sp"
-        android:paddingStart="16dp"
-        android:textColorHint="#A9ADB4"
-        android:textCursorDrawable="@null"/>
+        style="@style/sign_up_text"/>
     <Button
         android:id="@+id/pw_check"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="16dp"
         android:text="확인"
-        android:layout_gravity="bottom|end"/>
+        style="@style/check_button"/>
     </FrameLayout>
 
     <EditText
         android:id="@+id/name_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginTop="16dp"
         android:hint="이름"
-        android:textSize="24sp"
-        android:paddingStart="16dp"
-        android:textColorHint="#A9ADB4"
-        android:textCursorDrawable="@null"/>
+        style="@style/sign_up_text"/>
 
 
     <EditText
         android:id="@+id/phone_number_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginTop="16dp"
         android:hint="전화번호"
         android:inputType="number"
         android:maxLength="12"
-        android:textSize="24sp"
-        android:paddingStart="16dp"
-        android:textColorHint="#A9ADB4"
-        android:textCursorDrawable="@null"/>
+        style="@style/sign_up_text"/>
 
     <EditText
         android:id="@+id/birth_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginTop="16dp"
         android:hint="생년월일(ex:19990101)"
         android:inputType="number"
         android:maxLength="8"
-        android:textSize="24sp"
-        android:paddingStart="16dp"
-        android:textColorHint="#A9ADB4"
-        android:textCursorDrawable="@null"/>
+        style="@style/sign_up_text"/>
 
 
     <Button
         android:id="@+id/next_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="13dp"
-        android:layout_marginEnd="13dp"
-        android:layout_marginTop="60dp"
-        android:text="다음으로"
-        android:textColor="#10171F"
-        android:textSize="25sp"
-        android:textStyle="bold" />
+         style="@style/nextbutton"
+        android:text="다음으로"/>
 
 </LinearLayout>

@@ -1,60 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
+    style="@style/mw"
     tools:context=".MainActivity">
 
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="120dp"
-        android:layout_marginTop="40dp"
-        android:src="@drawable/cooing"
-        android:contentDescription="허전해서 그럴싸하게 넣어봄"
-        />
+        style="@style/cooing_image" />
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:layout_marginBottom="65dp"
-        android:text="cooing에 오신것을 환영합니다!"
-        android:textStyle="italic|bold"
-        android:textAlignment="center"
-        android:textSize="25sp" />
+        style="@style/welcome"
+        android:text="cooing에 오신것을 환영합니다!" />
 
     <EditText
         style="@style/first_text"
         android:id="@+id/id_text"
-        android:hint="id를 입력하여주세요."
-        android:autofillHints="none"
-        />
+        android:hint="id를 입력하여주세요." />
     <EditText
         style="@style/first_text"
         android:id="@+id/pw_text"
-        android:autofillHints="none"
-        android:hint="비밀번호를 입력하여주세요."
-        />
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal"
-    android:gravity="center_horizontal">
-    <Button
-        android:id="@+id/login_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="100dp"
-        android:textStyle="bold"
-        android:text="로그인" />
+        android:hint="비밀번호를 입력하여주세요." />
+    <LinearLayout
+        style="@style/mw"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+        <Button
+            android:id="@+id/login_button"
+            style="@style/ww"
+            android:layout_marginEnd="100dp"
+            android:textStyle="bold"
+            android:text="로그인" />
 
-    <Button
-        android:id="@+id/sign_up_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textStyle="bold"
-        android:text="cooing이 처음이신가요?" />
-</LinearLayout>
+        <Button
+            android:id="@+id/sign_up_button"
+            style="@style/ww"
+            android:textStyle="bold"
+            android:text="cooing이 처음이신가요?" />
+    </LinearLayout>
 
 </LinearLayout>

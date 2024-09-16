@@ -1,64 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    style="@style/mm"
     android:orientation="vertical"
     android:gravity="center">
 
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="내 코드"
-        android:textSize="40sp"
-        android:layout_gravity="center"
+        style="@style/code_here"
         />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+         style="@style/mycode"
         android:id="@+id/my_couple_code"
-        android:layout_marginTop="30dp"
         android:text="avefdsv"
-        android:textColor="@color/purple_200"
-        android:textStyle="bold"
-        android:textSize="25sp"
-        android:layout_gravity="center"
         />
 
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/ww"
         android:id="@+id/copy_button"
-        android:layout_gravity="center"
         android:tooltipText="연인의 폰에 입력하세요"
         android:text="코드 복사하기"
         />
 
 
     <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="60dp"
+        style="@style/couple_code"
         android:id="@+id/other_couple_code"
-        android:layout_marginTop="160dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginEnd="40dp"
-        android:autofillHints="none"
-        android:hint="연인의 코드 입력"
-        android:textAlignment="center"
-        android:textColor="#A9ADB4"
-        android:inputType="text"
         android:tooltipText="연인의 코드를 입력하세요"
-        android:textCursorDrawable="@null"
-        />
+        android:hint="연인의 코드 입력"
+    />
 
     
     <Button
         android:id="@+id/connect"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
+        style="@style/ww"
         android:text="연결"
         />
 

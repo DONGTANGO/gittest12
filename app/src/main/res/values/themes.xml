@@ -3,6 +3,37 @@
 
     <style name="Theme.Imbyungsin" parent="android:Theme.Material.Light.NoActionBar" />
 
+    <style name="ww">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+    <style name="mw">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:orientation">vertical</item>
+
+    </style>
+    <style name="mm">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="cooing_image">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">120dp</item>
+        <item name="android:layout_marginTop">40dp</item>
+        <item name="android:src">@drawable/cooing</item>
+        <item name="android:contentDescription">허전해서 그럴싸하게 넣어봄</item>
+    </style>
+    <style name="welcome">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">50dp</item>
+        <item name="android:layout_marginBottom">65dp</item>
+        <item name="android:textStyle">italic|bold</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">25sp</item>
+    </style>
     <style name="first_text">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">70dp</item>
@@ -12,8 +43,63 @@
         <item name="android:textSize">25sp</item>
         <item name="android:textColorHint">#A9ADB4</item>
         <item name="android:textCursorDrawable">@null</item>
+        <item name="android:autofillHints">none</item>
     </style>
-    <style name="first_button">
+    <style name="sign_up_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:textColorHint">#A9ADB4</item>
+        <item name="android:autofillHints">none</item>
+        <item name="android:textCursorDrawable">@null</item>
+    </style>
+    <style name="check_button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:layout_gravity">bottom|end</item>
+    </style>
+    <style name="nextbutton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">13dp</item>
+        <item name="android:layout_marginEnd">13dp</item>
+        <item name="android:layout_marginTop">60dp</item>
+        <item name="android:textColor">#10171F</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="code_here">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">40sp</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+    <style name="mycode">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:textColor">@color/purple_200</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+    <style name="couple_code">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_marginTop">160dp</item>
+        <item name="android:layout_marginStart">40dp</item>
+        <item name="android:layout_marginEnd">40dp</item>
+        <item name="android:autofillHints">none</item>
+        <item name="android:textColor">#A9ADB4</item>
+        <item name="android:inputType">text</item>
+        <item name="android:textCursorDrawable">@null</item>
+    </style>
 
-    </style>
+
 </resources>
