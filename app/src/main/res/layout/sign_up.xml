@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/id_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="160dp"
+            android:layout_marginEnd="16dp"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+            android:drawablePadding="8dp"
+            android:hint="id"
+            android:inputType="text"
+            android:maxLength="20"
+            android:paddingStart="16dp"
+            android:textColorHint="#A9ADB4"
+            android:textCursorDrawable="@null"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="16dp"
+            android:text="중복확인"
+            android:layout_gravity="bottom|end"/>
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/pw_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:drawablePadding="8dp"
+        android:hint="pw"
+        android:inputType="textPassword"
+        android:textSize="24sp"
+        android:paddingStart="16dp"
+        android:textColorHint="#A9ADB4"
+        android:textCursorDrawable="@null"/>
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <EditText
+        android:id="@+id/pw_check_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:drawablePadding="8dp"
+        android:hint="다시 한번 입력해 주세요."
+        android:textSize="24sp"
+        android:paddingStart="16dp"
+        android:textColorHint="#A9ADB4"
+        android:textCursorDrawable="@null"/>
+    <Button
+        android:id="@+id/pw_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="확인"
+        android:layout_gravity="bottom|end"/>
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/name_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:drawablePadding="8dp"
+        android:hint="이름"
+        android:textSize="24sp"
+        android:paddingStart="16dp"
+        android:textColorHint="#A9ADB4"
+        android:textCursorDrawable="@null"/>
+
+
+    <EditText
+        android:id="@+id/nickname_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:drawablePadding="8dp"
+        android:hint="전화번호"
+        android:inputType="number"
+        android:maxLength="12"
+        android:textSize="24sp"
+        android:paddingStart="16dp"
+        android:textColorHint="#A9ADB4"
+        android:textCursorDrawable="@null"/>
+
+    <EditText
+        android:id="@+id/birth_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:drawablePadding="8dp"
+        android:hint="생년월일(ex:19990101)"
+        android:inputType="number"
+        android:maxLength="8"
+        android:textSize="24sp"
+        android:paddingStart="16dp"
+        android:textColorHint="#A9ADB4"
+        android:textCursorDrawable="@null"/>
+
+
+    <Button
+        android:id="@+id/sign_up_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginTop="60dp"
+        android:letterSpacing="-0.05"
+        android:lineSpacingExtra="3sp"
+        android:text="다음으로"
+        android:textColor="#10171F"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:translationY="-1.52sp" />
+
+</LinearLayout>
