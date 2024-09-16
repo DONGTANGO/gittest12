@@ -9,7 +9,6 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="120dp"
-        android:layout_alignParentTop="true"
         android:layout_marginTop="40dp"
         android:src="@drawable/cooing"
         android:contentDescription="허전해서 그럴싸하게 넣어봄"
@@ -18,8 +17,6 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentBottom="true"
         android:layout_marginTop="50dp"
         android:layout_marginBottom="65dp"
         android:text="cooing에 오신것을 환영합니다!"
@@ -28,34 +25,17 @@
         android:textSize="25sp" />
 
     <EditText
+        style="@style/first_text"
         android:id="@+id/id_text"
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:paddingStart="16dp"
-        android:hint="id를 입력하여 주세요."
-        android:textSize="25sp"
-        android:textColorHint="#A9ADB4"
-        android:textCursorDrawable="@null"/>
+        android:hint="id를 입력하여주세요."
+        android:autofillHints="none"
+        />
     <EditText
+        style="@style/first_text"
         android:id="@+id/pw_text"
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:paddingStart="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="70dp"
-        android:hint="비밀번호를 입력하여 주세요."
-        android:textSize="25sp"
-        android:inputType="textPassword"
-        android:textColorHint="#A9ADB4"
-        android:textCursorDrawable="@null"/>
+        android:autofillHints="none"
+        android:hint="비밀번호를 입력하여주세요."
+        />
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -65,7 +45,6 @@
         android:id="@+id/login_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
         android:layout_marginEnd="100dp"
         android:textStyle="bold"
         android:text="로그인" />

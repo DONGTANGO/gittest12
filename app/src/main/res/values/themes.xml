@@ -2,4 +2,18 @@
 <resources>
 
     <style name="Theme.Imbyungsin" parent="android:Theme.Material.Light.NoActionBar" />
+
+    <style name="first_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColorHint">#A9ADB4</item>
+        <item name="android:textCursorDrawable">@null</item>
+    </style>
+    <style name="first_button">
+
+    </style>
 </resources>
